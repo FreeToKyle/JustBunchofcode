@@ -10,3 +10,23 @@ public class Equal {
         System.out.println(n1.equals(n2)); // true непосред. сравнение
     }
 }
+
+
+_____
+
+package FirstHeadJava;
+
+public class Equal {
+    public static void main(String[] args) {
+        Value v1 = new Value();
+        Value v2 = new Value();
+        v1.i =v2.i = 100;
+        System.out.println(v1.i); // 100
+        System.out.println(v2.i); // 100
+        System.out.println(v1.equals(v2)); // FALSE - equals по умолчанию сравнивает ссылки, пока метод не переопределится, то будет фолс (отчасти, причиной послужило создание своего класса)
+    }
+}
+
+class Value{
+    int i;
+}
