@@ -1,0 +1,33 @@
+package FirstHeadJava;
+
+public class TestDrive {
+    public static void main(String[] args) {
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        Dog clone = new Dog();
+
+
+
+
+        dog1.name = "Spot";
+        dog2.name = "Scruffy";
+        clone.name=dog1.name;//клонируем собакена
+
+        dog1.says = "WOOOF";
+        dog2.says = "tyaf";
+
+        System.out.println("His name is "+ dog1.name + " and he says:" + dog1.says + ".");
+        System.out.println("His name is "+ dog2.name + " and he says:" + dog2.says + ".");
+
+        System.out.println(clone.name);//Spot (клон)
+
+        System.out.println(clone.name.equals(dog1.name));//true
+
+    }
+
+}
+
+class Dog{
+    String name;
+    String says;
+}
