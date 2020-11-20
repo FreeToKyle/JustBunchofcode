@@ -1,0 +1,18 @@
+package FirstHeadJava;
+
+import java.util.*;
+
+public class DropIt {
+    public static void main(String[] args) {
+       Random rand = new Random();
+
+       int i = rand.nextInt(10)+1;
+       int j = rand.nextInt(10)+1;
+        System.out.println((i>j) + "- Reshka");
+        System.out.println((i<j)+ " Orel");
+        System.out.println((i==j) + " Rebro");
+
+        System.out.println(i);
+        System.out.println(j);
+    }
+}
