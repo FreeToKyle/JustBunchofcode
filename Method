@@ -1,0 +1,17 @@
+package FirstHeadJava;
+
+public class dick {
+    public static void main(String[] args) {
+        int i = 3;
+        int k = 5;
+        i = count(i);
+        k = count(k);//метод count выполняется ниже, он берет текущий x и прибавляет его к "k" и "i"
+        System.out.println(i);
+        System.out.println(k);
+
+    }
+    private static int count(int x){
+        x = x +2;
+        return x;
+    }
+}
