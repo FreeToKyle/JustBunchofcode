@@ -1,0 +1,10 @@
+package FirstHeadJava;
+
+public class Main {
+    public static void main(String[] args) {
+        sayHello("Петр");
+    }
+    public static void sayHello(String name){
+        System.out.println("Hi," + name);
+    }
+}
